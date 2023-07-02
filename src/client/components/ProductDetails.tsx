@@ -22,7 +22,7 @@ export const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
     const btnSizeClass = process.env.BUG_ID !== '9' ? 'btn-lg' : 'btn-sm';
 
     return (
-        <div className={bem(null, ['row'])}>
+        <div className={bem(null, ['row'])} data-testid='ProductItem'>
             <div className="col-12 col-sm-5 col-lg-4">
                 <Image />
             </div>

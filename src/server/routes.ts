@@ -16,6 +16,7 @@ const indexHtml = (req: express.Request, res: express.Response) => {
 
 const store = new ExampleStore();
 
+
 export const router = express.Router();
 
 router.get('/', indexHtml);

@@ -25,7 +25,7 @@ export const Product: React.FC = () => {
     const product = useSelector((s: ApplicationState) => s.details[id]);
 
     const content: React.ReactNode = product ?
-        <ProductDetails product={product}/> :
+        <ProductDetails product={product} /> :
         'LOADING';
 
     return <div className={bem()}><Helmet title={product?.name} />{content}</div>;
